@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:black;
+    padding:20px 50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#ff4500;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin:0 15px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ff4500;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop')
+    center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h2{
+    font-size:60px;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#ff4500;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* PROGRAMS */
+
+.programs{
+    padding:100px 50px;
+    text-align:center;
+}
+
+.program-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#222;
+    padding:30px;
+    width:300px;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#ff4500;
+}
+
+/* TRAINERS */
+
+.trainers{
+    padding:100px 50px;
+    text-align:center;
+}
+
+.trainer-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.trainer-card{
+    width:300px;
+    background:#222;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.trainer-card:hover{
+    transform:scale(1.05);
+}
+
+.trainer-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.trainer-card h3{
+    margin:15px 0;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:100px 50px;
+    text-align:center;
+}
+
+.map{
+    margin:30px 0;
+}
+
+.whatsapp-contact{
+    display:inline-block;
+    padding:15px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+}
